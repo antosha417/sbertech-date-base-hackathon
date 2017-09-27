@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="http://127.0.0.1:5000/change">
+    <p><input type="hidden" name="report" value="{{ report }}"></p>
+    <p><input type="hidden" name="date_begin" value="{{ date_begin }}"></p>
+    <p><input type="hidden" name="date_end" value="{{ date_end }}"></p>
+    <p><input name="sql" placeholder="Place your sql request here."></p>
+    <p><input type="submit"></p>
+</form>
+</body>
+</html>

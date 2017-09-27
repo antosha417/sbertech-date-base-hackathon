@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for res in rows %}
+        {{ res }}<br>
+    {% endfor %}
+<form action="http://127.0.0.1:5000/approve">
+    <p><input type="hidden" name="report" value="{{ report }}"></p>
+    <p><input type="hidden" name="date_begin" value="{{ date_begin }}"></p>
+    <p><input type="hidden" name="date_end" value="{{ date_end }}"></p>
+    <p><input type="submit"></p>
+</form>
+<a href="http://127.0.0.1:5000/change"> Change</a>
+</body>
+</html>

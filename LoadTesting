@@ -1,0 +1,8 @@
+pgbench -i -U postgres -h 138.68.67.181 -s 15 postgres
+
+// 50/50 read/write
+pgbench -U postgres -h 138.68.67.181 -c 2 -j 1 -T 10 postgres
+// read only
+pgbench -U postgres -h 138.68.67.181 -c 2 -j 1 -S -T 10 postgres
+// write only
+
